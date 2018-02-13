@@ -2,6 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 //main app
-import App from './containers/App';
+import Board from './containers/Board';
+import { observe } from './containers/Game';
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const rootEl = document.getElementById('root');
+
+observe(knightPosition =>
+  ReactDOM.render(
+    <Board knightPosition={knightPosition} />,
+    rootEl
+  )
+);
