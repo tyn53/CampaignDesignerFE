@@ -15,7 +15,7 @@ export default class Board extends Component {
 
     return (
       <div key={i}
-           style={{width: '12.5%', height: '30px'}}
+           style={{width: '12.5%', height: '12.5%'}}
            onClick={() => this.handleSquareClick(x,y)}>
         <Square black={black}>
           {piece}&nbsp;
@@ -38,8 +38,8 @@ export default class Board extends Component {
     }
     return (
       <div style = {{
-        width: '100%',
-        height: '100%',
+        width: '800px',
+        height: '600px',
         display: 'flex',
         flexWrap: 'wrap'
       }}>
