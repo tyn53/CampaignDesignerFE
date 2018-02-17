@@ -1,10 +1,68 @@
+.root {
+  position: relative;
+}
+
+.designer {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* Canvas */
+
+.canvas {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  background-color: #EEEEEE;
+}
+
+/* Campaign Box */
+
 .campaign__box {
   width: 200px;
   height: 200px;
-  background-color: #EEEEFF;
+  background-color: #EEEEEE;
   border-radius: 3px;
   box-shadow: 0px 1px 6px rgba(0,0,0,0.12);
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+
 }
+
 .campaign__box:hover {
   box-shadow:1px 1px 5px #555555;
+}
+
+/* Toolbox */
+
+.toolbox {
+  position: absolute;
+  width: 300px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  background-color: #656d7a;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.12);
+}
+
+.toolbox__title {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color:#EEEEEE;
+
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+  font-kerning: normal;
 }
