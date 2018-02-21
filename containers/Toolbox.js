@@ -1,16 +1,23 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import Campaign from './Campaign';
 
 export default class Toolbox extends Component
 {
+   HandleClick(e) {
+     e.preventDefault();
+     console.log("clicked");
+
+   }
+
    render()
    {
+      let toolboxOptions = this.props.items.map(item => {
+        return <Campaign key={item.title} title={item.title}></Campaign>
+      })
+
       return <div className="toolbox">
       <div className="toolbox__title">CDesigner</div>
-      <Campaign/>
-      <Campaign/>
-      <Campaign/>
+      {toolboxOptions}
       </div>
    }
 }
