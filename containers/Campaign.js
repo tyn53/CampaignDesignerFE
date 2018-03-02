@@ -10,10 +10,25 @@ export default class Campaign extends Component
     e.preventDefault();
     console.log("Clicked");
   }
+  HandleMouseEnter(e) {
+    e.preventDefault();
+    
+  }
+  HandleMouseLeave(e) {
+
+  }
+
   render() {
-    return <div className='campaign__box' onClick={this.HandleClick}>
-    {this.props.title}
-    <Adventure />
-    </div>
+    if(this.props.title !== undefined)
+    {
+      return <div className='campaign__box' onClick={this.HandleClick} onMouseEnter={this.HandleMouseEnter} onMouseLeave={this.HandleMouseLeave}>
+        <div className='campaign__box__text'>
+          {this.props.title.charAt(0)}
+        </div>
+      </div>
+    }
+    else {
+      return <div></div>
+    }
   }
 }

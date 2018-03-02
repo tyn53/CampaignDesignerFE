@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Canvas from './Canvas';
 import Toolbox from './Toolbox';
 import '../css/index.css';
+import '../styles/css/stylesheets/index.css';
 
 export default class App extends Component {
   constructor(){

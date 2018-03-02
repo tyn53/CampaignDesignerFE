@@ -5,6 +5,6 @@ import PropTypes from 'prop-types';
 export default class Adventure extends PlotPoint
 {
     render() {
-      return <div className='adventure'>Adventure</div>
+      return <div className='adventure'></div>
     }
 }

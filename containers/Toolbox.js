@@ -16,8 +16,11 @@ export default class Toolbox extends Component
       })
 
       return <div className="toolbox">
-      <div className="toolbox__title">CDesigner</div>
+      <div className="toolbox__title">CD</div>
+      <hr/>
+      Campaign
       {toolboxOptions}
+      <hr/>
       </div>
    }
 }
