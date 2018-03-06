@@ -12,7 +12,7 @@ export default class Toolbox extends Component
    render()
    {
       let toolboxOptions = this.props.items.map(item => {
-        return <Campaign key={item.title} title={item.title}></Campaign>
+        return <Campaign key={item.CampaignID} title={item.CampaignName}></Campaign>
       })
 
       return <div className="toolbox">

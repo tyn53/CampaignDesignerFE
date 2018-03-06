@@ -12,20 +12,13 @@ export default class App extends Component {
     }
   }
 
-  componentWillMount(){
-    this.setState(
-      {items: [
-        {
-          title: 'Aardmor'
-        },
-        {
-          title: 'The Makers Passing'
-        },
-        {
-          title: 'The Shadow Lands'
-        }
-
-    ]});
+  componentDidMount(){
+      var targetUrl = "http://localhost:5000/campaign";
+      fetch(targetUrl).then ( results => {
+        return results.json();
+      }).then(data => {
+        this.setState({items:data});
+      })
   }
 
   render () {
