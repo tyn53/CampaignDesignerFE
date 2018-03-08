@@ -1,0 +1,102 @@
+@import '_variables.scss';
+
+body {
+  font-family: $font;
+  font-size: 10px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $dark;
+}
+
+.app {
+  height: 100%;
+  min-height: 100%;
+}
+
+.canvas {
+  min-height: 100%;
+  background-color: $light;
+  overflow:hidden;
+}
+
+.toolbox{
+  width: 70px;
+  height: 100%;
+  min-height: 100%;
+  background-color: $mid-light;
+  text-align:center;
+  overflow-x: visible;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.12);
+
+  hr{
+    display:block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border:none;
+    color:$dark;
+    height:1px;
+    background:$mid;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from($dark), to($mid-light));
+  }
+}
+
+.toolbox__title{
+  font-family: $font;
+  color: $dark;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: $font;
+  font-weight: bold;
+  font-kerning: normal;
+}
+
+.campaign__titlemodal {
+    display: inline-block;
+    white-space: nowrap;
+    padding:0px 10px 0px 10px;
+    font-family: $font;
+    font-size: 25px;
+    background-color: $light;
+    position: relative;
+    left: 60px;
+    top: -45px;
+    box-shadow: 2px 2px 2px $dark;
+
+    ::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 15px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid $light;
+
+    }
+
+}
+
+.campaign__box {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+  background-color: $light;
+
+}
+
+.campaign__box:hover {
+  box-shadow:1px 1px 5px $dark;
+}
+
+.textbox {
+  font-family: $font;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}

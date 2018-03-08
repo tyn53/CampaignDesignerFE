@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Canvas from './Canvas';
 import Toolbox from './Toolbox';
-import '../css/index.css';
-import '../styles/css/stylesheets/index.css';
+import '../styles/css/index.css';
 
 export default class App extends Component {
   constructor(){
@@ -22,7 +21,7 @@ export default class App extends Component {
   }
 
   render () {
-    return <div>
+    return <div className="app">
              <Canvas />
              <Toolbox items={this.state.items}/>
            </div>

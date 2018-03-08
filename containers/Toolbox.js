@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Campaign from './Campaign';
+import Campaign from './Campaign/Campaign';
 
 export default class Toolbox extends Component
 {
