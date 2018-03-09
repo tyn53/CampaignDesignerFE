@@ -12,7 +12,7 @@ export default class App extends Component {
   }
 
   componentDidMount(){
-      var targetUrl = "http://localhost:5000/campaign";
+      var targetUrl = "http://localhost:5000/campaigns";
       fetch(targetUrl).then ( results => {
         return results.json();
       }).then(data => {
